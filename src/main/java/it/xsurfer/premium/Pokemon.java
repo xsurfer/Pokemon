@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
+ * Implementation of IPokemon interface. It uses a Set to store the visited locations.
+ * You can catch a pokemon only if the current position is not already stored in the visited set.
+ *
  * Created by fabio on 20/10/16.
  */
 public class Pokemon implements IPokemon {

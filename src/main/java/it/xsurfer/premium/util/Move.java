@@ -4,6 +4,8 @@ package it.xsurfer.premium.util;
 import java.awt.*;
 
 /**
+ * Describes the 4 moves availables.
+ *
  * Created by fabio on 20/10/16.
  */
 public enum Move {

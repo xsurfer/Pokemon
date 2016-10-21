@@ -8,6 +8,11 @@ import java.util.List;
  */
 public class MoveConverter {
 
+    /**
+     * Returns a list of Move specified in the String moves.
+     * @param moves
+     * @return a list of move
+     */
     public static List<Move> toMoves(String moves){
         if(moves==null)
             return new ArrayList<>();
