@@ -1,6 +1,6 @@
 # Catch all Pokemons!
 
-Clone, Compile and Play:
+Clone, Compile (using maven) and Play:
 
 $ git clone https://github.com/xsurfer/Pokemon.git 
 
