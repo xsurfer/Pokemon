@@ -1,5 +1,9 @@
 package it.xsurfer.premium;
 
+import it.xsurfer.premium.util.Move;
+import it.xsurfer.premium.util.MoveConverter;
+import it.xsurfer.premium.util.MoveParser;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,7 +22,7 @@ public class Main {
         }
         while (!MoveParser.parse(input));
 
-        List<Move> moves = Converter.toMoves(input);
+        List<Move> moves = MoveConverter.toMoves(input);
         IPokemon ash = new Pokemon(moves);
         int pokemons = ash.catchPokemons();
         System.out.println(pokemons);

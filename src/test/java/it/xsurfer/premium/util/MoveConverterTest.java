@@ -1,4 +1,4 @@
-package it.xsurfer.premium;
+package it.xsurfer.premium.util;
 
 import org.junit.Test;
 
@@ -10,18 +10,18 @@ import static org.junit.Assert.*;
 /**
  * Created by fabio on 21/10/16.
  */
-public class ConverterTest {
+public class MoveConverterTest {
     @Test
     public void testEmpty() throws Exception {
         String input = "";
-        List<Move> restult = Converter.toMoves(input);
+        List<Move> restult = MoveConverter.toMoves(input);
         assertEquals(new ArrayList<Move>(), restult);
     }
 
     @Test
     public void testNull() throws Exception {
         String input = null;
-        List<Move> restult = Converter.toMoves(input);
+        List<Move> restult = MoveConverter.toMoves(input);
         assertEquals(new ArrayList<Move>(), restult);
     }
 
@@ -35,15 +35,15 @@ public class ConverterTest {
         expectedResult.add(Move.O);
 
         String input = "neso";
-        List<Move> result = Converter.toMoves(input);
+        List<Move> result = MoveConverter.toMoves(input);
         assertEquals(expectedResult, result);
 
         input = "NeSo";
-        result = Converter.toMoves(input);
+        result = MoveConverter.toMoves(input);
         assertEquals(expectedResult, result);
 
         input = "NESO";
-        result = Converter.toMoves(input);
+        result = MoveConverter.toMoves(input);
         assertEquals(expectedResult, result);
     }
 
@@ -57,15 +57,15 @@ public class ConverterTest {
         expectedResult.add(Move.N);
 
         String input = "neso";
-        List<Move> result = Converter.toMoves(input);
+        List<Move> result = MoveConverter.toMoves(input);
         assertNotEquals(expectedResult, result);
 
         input = "NeSo";
-        result = Converter.toMoves(input);
+        result = MoveConverter.toMoves(input);
         assertNotEquals(expectedResult, result);
 
         input = "NESO";
-        result = Converter.toMoves(input);
+        result = MoveConverter.toMoves(input);
         assertNotEquals(expectedResult, result);
     }
 }

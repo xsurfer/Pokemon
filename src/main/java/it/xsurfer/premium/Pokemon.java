@@ -1,5 +1,7 @@
 package it.xsurfer.premium;
 
+import it.xsurfer.premium.util.Move;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashSet;

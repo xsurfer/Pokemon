@@ -1,5 +1,6 @@
 package it.xsurfer.premium;
 
+import it.xsurfer.premium.util.Move;
 import org.junit.Test;
 
 import java.util.ArrayList;

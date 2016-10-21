@@ -1,4 +1,4 @@
-package it.xsurfer.premium;
+package it.xsurfer.premium.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

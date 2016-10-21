@@ -1,13 +1,12 @@
-package it.xsurfer.premium;
+package it.xsurfer.premium.util;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by fabio on 20/10/16.
  */
-public class Converter {
+public class MoveConverter {
 
     public static List<Move> toMoves(String moves){
         if(moves==null)

@@ -1,4 +1,4 @@
-package it.xsurfer.premium;
+package it.xsurfer.premium.util;
 
 import org.junit.Test;
 

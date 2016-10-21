@@ -1,5 +1,6 @@
-package it.xsurfer.premium;
+package it.xsurfer.premium.util;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.awt.*;
@@ -13,7 +14,7 @@ public class MoveTest {
 
     @Test
     public void testNord() throws Exception {
-        assertEquals(new Point(0,1), Move.N.execute(0,0));
+        Assert.assertEquals(new Point(0,1), Move.N.execute(0,0));
         assertEquals(new Point(10,1), Move.N.execute(10,0));
         assertEquals(new Point(999,1000), Move.N.execute(999,999));
         assertEquals(new Point(0,-1), Move.N.execute(0,-2));
